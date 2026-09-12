@@ -1,0 +1,20 @@
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+private-data/
+build/
+dist/
+build-output.log
+
+# Local secrets and device artifacts
+.env
+.env.*
+*.plist
+Backups/
+Icons/
+WriteTests/
+VisibilityTests/
+IconTests/
+window.json
+pairing/
