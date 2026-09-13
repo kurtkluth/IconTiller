@@ -51,4 +51,27 @@ Update README feature descriptions and limitations when behavior changes. Keep h
 - Push checkpoints to the configured remote feature branch and open a pull request when ready for review.
 - Wait for Kurt's explicit approval before merging; never merge or enable auto-merge without it.
 - If there is no repository or remote, report that limitation rather than creating or publishing one without direction.
-- The intended GitHub owner is `kurtkluth`; the selected project name is IconTiller. Do not rename, create the public repository, choose a license, publish release artifacts, or claim license/name availability solely from these notes. Follow the user's selection and task authorization.
+- The public repository is [kurtkluth/IconTiller](https://github.com/kurtkluth/IconTiller), with `origin` configured and `main` as the default branch. The selected license is MIT, copyright 2026 Kurt Kluth; retain [LICENSE](LICENSE).
+- Public history starts from a sanitized snapshot. Older local development branches contain private historical layout notes. Keep them local; never push all branches, mirror the repository, or merge the private history into public branches.
+- Use the repository's configured GitHub no-reply author email for public commits.
+- Publishing executable release assets requires a user request. Do not infer release publication from source publication or a local build request.
+
+## UI and writing decisions
+
+- Use a standard ASCII hyphen (-), not an em dash or en dash, in authored user-facing text and responses. Preserve exact source quotations and code syntax when needed.
+- The main heading is `IconTiller`, the subtitle is `Arrange your apps. Keep your data local.`, and the title bar is `IconTiller - App Layout Editor`.
+- Keep dialogs centered over the application's current position. Keep the larger folder chooser, aligned search-result columns, readable Apply review, and About dialog.
+- Keep Find app aligned under Add page. Bottom editing controls share one row at normal widths; the selection label moves above them at narrow widths.
+- Window size, position, and maximized state are maintained by `window_state.py`. A missing saved monitor falls back to (0, 0). Preferences stay in the legacy local-data directory.
+- The selected icon is [assets/icontiller.png](assets/icontiller.png). Supply multiple PhotoImage sizes for Tk title bars; do not override them with iconbitmap. The ICO is used for executable packaging. Keep the alternate design and note in [assets/README.md](assets/README.md).
+- Kurt explicitly approved [assets/icontiller-app.png](assets/icontiller-app.png) for the public README. That approval applies to this supplied image, not other personal screenshots or layouts.
+
+## End-of-day handoff - 2026-09-12
+
+- Initial public source publication (PR #1) and the branded README with screenshot (PR #2) are merged into `main`. Start future feature branches from current `origin/main`.
+- The latest full automated suite passed all 55 tests. The packaged Windows smoke check also passed without accessing a phone. Later publication and README changes were documentation/assets/build-copy changes, checked with diffs and local links.
+- A local Windows x64 portable build is in `dist/IconTiller`, with a companion ZIP in `dist`. These files are ignored by Git and have not been published as GitHub release assets.
+- That ZIP predates the MIT/publication documentation updates. Before distributing a new release, rebuild with `build.ps1`, check `build/packaged-smoke.json`, and verify the package includes the current `README.txt` and `LICENSE.txt`. Do not assume the earlier ZIP contains them both.
+- [DISTRIBUTION_README.txt](DISTRIBUTION_README.txt) is the maintained end-user setup and usage guide; `build.ps1` copies it beside the executable as `README.txt`.
+- No new live-device testing was performed for the UI, artwork, About, window-preference, or packaging changes. Existing write restrictions and unresolved App Library removal still apply.
+- No further implementation task is queued. Resume from Kurt's next request; do not publish a release or broaden device writes automatically.
