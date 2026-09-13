@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="36" viewBox="0 0 450 36" role="img" aria-label="Windows desktop app, MIT License, local USB connection">
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle">
+    <rect x="0" y="2" width="166" height="32" rx="8" fill="#1c2940"/>
+    <text x="83" y="23" fill="#edf3ff">Windows desktop</text>
+    <rect x="174" y="2" width="112" height="32" rx="8" fill="#63d8bc"/>
+    <text x="230" y="23" fill="#101827">MIT License</text>
+    <rect x="294" y="2" width="156" height="32" rx="8" fill="#1c2940"/>
+    <text x="372" y="23" fill="#63d8bc">Local USB</text>
+  </g>
+</svg>

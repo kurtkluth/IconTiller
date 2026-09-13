@@ -1,8 +1,27 @@
-# IconTiller
+<p align="center">
+  <img src="assets/icontiller.png" alt="IconTiller app icon" width="128" height="128">
+</p>
 
-**App Layout Editor by Kurt Kluth** | [MIT License](LICENSE)
+<h1 align="center">IconTiller</h1>
+
+<p align="center"><strong>Arrange your apps. Keep your data local.</strong></p>
+<p align="center">App Layout Editor by Kurt Kluth</p>
+
+<p align="center">
+  <img src="assets/readme-badges.svg" alt="Windows desktop app, MIT License, local USB connection" width="450" height="36">
+</p>
+
+<p align="center">
+  <a href="#get-started-on-windows">Get started</a> ·
+  <a href="DISTRIBUTION_README.txt">User guide</a> ·
+  <a href="LICENSE">MIT License</a>
+</p>
 
 Arrange your iPhone Home Screens from Windows, with real app icons, drag-and-drop editing, and checked USB writes.
+
+![IconTiller showing its app layout editor with dock, Home Screen pages, and arrangement controls](assets/icontiller-app.png)
+
+*The Windows editor with real app artwork, page navigation, and drag-and-drop controls.*
 
 **Development preview.** The current Python application supports app swaps and page reordering that preserve existing page sizes. Compatibility has been tested on one connected iPhone reporting iOS 27.0; broader device and iOS support is not established. Source code is available under the MIT License.
 
